@@ -1,45 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useReducer, useState } from "react";
+import NameList from "./Components/NameList";
+import UserForm from "./Components/UserForm";
 
-let countz = 0;
-
-
-function Counter({name}){
-  // console.log(`Counter ${name} Created`);
-  const [count, setCount] = useState(0);
-  return (
-    <button onClick={() => setCount(count + 1)}>Count = {count}</button>
-  );
-}
-
-function NameList(){
-  
-  const [nameList, setNameList] = useState(['Hasan', 'Zeliha', 'Bortu', 'Fethi']);
-  const [name, setName] = useState('');
-  const namesList = nameList.map( name => (<li key={name}>{name}</li>));
-
-  const addName = () => {
-    setNameList([...nameList,name]);
-    setName('');
-  }
-
-  return (
-    <>
-     <Counter />
-      <input value={name} onChange={(e) => setName(e.target.value)} placeholder="Name"></input>
-      <button onClick={ addName }>Add</button>
-      <ul>
-        {namesList}
-      </ul>
-    </>
-  
-  );
-}
-
-
-function App() {
+function App(){
   return (
     <div className="App">
       <NameList />
+      <UserForm />
     </div>
   );
 }
