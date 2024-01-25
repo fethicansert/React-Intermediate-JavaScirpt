@@ -1,0 +1,39 @@
+{
+    "names":[
+       {
+        "id":"1",
+        "name":"Ahmet"
+       },
+       {
+        "id":"2",
+        "name":"Ayse"
+       },
+       {
+        "id":"3",
+        "name":"Fatma"
+       },
+       {
+        "id":"4",
+        "name":"Ali"
+       }
+    ],
+
+    "comments": [
+        {
+            "id":"1",
+            "comment":"Some comment text Ahmet"
+        },
+        {
+            "id":"2",
+            "comment":"Some comment text Ayse"
+        },
+        {
+            "id":"3",
+            "comment":"Some comment text Fatma"
+        },
+        {
+            "id":"4",
+            "comment":"Some comment text Ali"
+        }
+    ]
+}
